@@ -1,2 +1,55 @@
-# instacart-customer-behaviour-analysis
-Customer segmentation, reorder prediction, and product bundling discovery on the INstacart 2017 grocery dataset using K-Means, Logistic Regression, Naive Bayes, and Association Rules.
+# Instacart Customer Behaviour Analysis
+This proj
+
+## Main Question
+How can Instacart use customer behaviour data to increase reorder revenue?
+
+## Analytical Pipeline:
+1. EDA                 : Understand distribution and validate data quality
+2. K-Means             : Segment/group customers by purchasing behaviour (In Progress)
+3. Logistic Regression : Predict item-level reorder probability (Future Work)
+4. Naive Bayes         : Auto-classify products into departments (Future Work)
+5. Apriori / FP Growth : Discover product association rules for bundling (Future Work)
+
+## Dataset
+Instacart Online Grocery Shopping Dataset 2017
+(https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis)
+
+Download the dataset from Kaggle and place the CSV files inside a `/data` folder:
+- `aisles.csv`
+- `departments.csv`
+- `orders.csv`
+- `products.csv`
+- `order_products__train.csv`
+- `order_products__prior.csv`
+
+## Setup
+1. Clone the repository
+````bash
+    git clone https://github.com/nivalix/instacart-customer-behaviour-analysis.git
+    cd instacart-customer-behaviour-analysis
+````
+
+2. Create and activate virtual environment
+````bash
+    python -m venv .venv
+
+    # Windows
+    .venv\Scripts\activate
+
+    # Mac/Linux
+    source .venv/bin/activate
+````
+   
+3. Install dependencies
+````bash
+    pip install -r requirements.txt
+````
+4. Open the notebook
+````bash
+    jupyter notebook customer_behaviour_analysis.ipynb
+````
+
+## Key Findings
+*Will be updated upon project completion.*
+
