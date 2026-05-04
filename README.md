@@ -1,5 +1,5 @@
 # Instacart Customer Behaviour Analysis
-This proj
+This project performs a set of analysis on over 32 million Instacart grocery transactions to understand purchasing patterns. The goal is to identify actionable insights on how customer behaviour data can be used to increase reorder revenue.
 
 ## Main Question
 How can Instacart use customer behaviour data to increase reorder revenue?
