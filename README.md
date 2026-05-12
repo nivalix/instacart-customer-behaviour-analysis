@@ -51,5 +51,6 @@ Download the dataset from Kaggle and place the CSV files inside a `/data` folder
 ````
 
 ## Key Findings
-*Will be updated upon project completion.*
+1. Identified the peak shopping hours (10AM - 4PM) and days, along with dominating items such as organic products and dairy.
+2. Identified three distinct customer segments using K-Means Clustering based on RFM + Loyalty: The Loyalist, The Newcomer, and Potential Churn.
 
