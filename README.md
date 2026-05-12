@@ -6,7 +6,7 @@ How can Instacart use customer behaviour data to increase reorder revenue?
 
 ## Analytical Pipeline:
 1. EDA                 : Understand distribution and validate data quality
-2. K-Means             : Segment/group customers by purchasing behaviour (In Progress)
+2. K-Means             : Segment/group customers by purchasing behaviour
 3. Logistic Regression : Predict item-level reorder probability (Future Work)
 4. Naive Bayes         : Auto-classify products into departments (Future Work)
 5. Apriori / FP Growth : Discover product association rules for bundling (Future Work)

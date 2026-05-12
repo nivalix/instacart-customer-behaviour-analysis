@@ -1,6 +1,10 @@
 .venv/
+venv/
+env/
 data/
 *.csv
+*.zip
+*.tar.gz
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
@@ -9,3 +13,8 @@ __pycache__/
 Thumbs.db
 .vscode/
 pyvenv.cfg
+
+kmeans_tuning_results.json
+
+# Exclusion
+!output/cluster_results.csv
