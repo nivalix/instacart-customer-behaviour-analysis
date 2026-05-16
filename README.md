@@ -7,9 +7,11 @@ How can Instacart use customer behaviour data to increase reorder revenue?
 ## Analytical Pipeline:
 1. EDA                 : Understand distribution and validate data quality
 2. K-Means             : Segment/group customers by purchasing behaviour
-3. Logistic Regression : Predict item-level reorder probability (Future Work)
-4. Naive Bayes         : Auto-classify products into departments (Future Work)
-5. Apriori / FP Growth : Discover product association rules for bundling (Future Work)
+
+### Future Works:
+3. Logistic Regression : Predict item-level reorder probability
+4. Naive Bayes         : Auto-classify products into departments
+5. Apriori / FP Growth : Discover product association rules for bundling
 
 ## Dataset
 Instacart Online Grocery Shopping Dataset 2017
@@ -52,4 +54,4 @@ Download the dataset from Kaggle and place the CSV files inside a `/data` folder
 
 ## Key Findings
 1. Identified the peak shopping hours (10AM - 4PM) and days, along with dominating items such as organic products and dairy.
-2. Identified three distinct customer segments using K-Means Clustering based on RFM + Loyalty: The Loyalist, The Newcomer, and Potential Churn.
+2. Identified three distinct customer segments using K-Means Clustering (The Loyalist, The Newcomer, The Potential Churn) along with their respective marketing strategy recommendations.
