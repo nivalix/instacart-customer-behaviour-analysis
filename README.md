@@ -1,23 +1,63 @@
 # Instacart Customer Behaviour Analysis
-This project performs a set of analysis on over 32 million Instacart grocery transactions to understand purchasing patterns. The goal is to identify actionable insights on how customer behaviour data can be used to increase reorder revenue.
+This project analyses over 32 million Instacart grocery transactions to understand how customer behaviour data can be used to increase reorder revenue. The analysis combines Python-based machine learning and SQL-based business intelligence to deliver actionable customer segmentation insights.
 
 ## Main Question
-How can Instacart use customer behaviour data to increase reorder revenue?
+**How can Instacart use customer behaviour data to increase reorder revenue?**
 
-## Analytical Pipeline:
-1. EDA                 : Understand distribution and validate data quality
-2. K-Means             : Segment/group customers by purchasing behaviour
+## Analytical Pipeline
 
-### Future Works:
-3. Logistic Regression : Predict item-level reorder probability
-4. Naive Bayes         : Auto-classify products into departments
-5. Apriori / FP Growth : Discover product association rules for bundling
+| Layer | Method | Tool | Status |
+|-------|--------|------|--------|
+| Exploratory Data Analysis | Distribution analysis, data quality validation | Python | Done |
+| Customer Segmentation | RFM-inspired K-Means Clustering | Python | Done |
+| Business Intelligence | Peak ordering, reorder rate, RFM segmentation | SQL (PostgreSQL) | Done |
+| Reorder Prediction | Logistic Regression | Python | Planned |
+| Product Classification | Multinomial Naive Bayes | Python | Planned |
+| Association Rules | Apriori / FP-Growth | Python | Planned |
+
+## Key Findings
+
+### Python Analysis
+- Peak shopping happens between 10AM - 4PM, with Sunday and Monday 
+  being the highest order volume days
+- K-Means clustering (k=3) identified three distinct customer segments:
+  - **The Loyalist**: high frequency, high reorder rate → retention priority
+  - **The Newcomer**: low frequency, low reorder rate → onboarding priority  
+  - **The Potential Churn**: previously active, declining engagement → re-engagement priority
+ 
+### SQL Analysis
+- **Dairy and beverages dominate reorder behaviour**: top reordered products 
+  are staple necessities (milk, purified water), indicating reorder revenue is driven by habitual purchasing.
+- **Baby and alcohol departments show the highest reorder rates**: needs-based categories create the strongest customer retention.
+- **Customer segmentation by frequency** reveals Heavy Buyers place significantly more orders with shorter intervals between purchases, representing the highestlong-term-revenue potential.
+
+## Project Structure
+```
+instacart-customer-behaviour-analysis/
+├── data/                              # Raw CSVs (gitignored, download from Kaggle)
+├── sql/
+│   ├── 01_setup.sql                   # Schema creation and data loading
+│   └── 02_analysis.sql                # Business intelligence queries
+├── sql_outputs/                       # SQL query result screenshots
+├── notebook_outputs/                  # Python analysis output charts
+├── customer_behaviour_analysis.ipynb
+├── requirements.txt
+└── .gitignore
+```
+
+## SQL Queries Overview
+Located in `/sql/02_analysis.sql`:
+1. **Peak Ordering Behaviour**: order volume by day and hour.
+2. **Top Reordered Products**: product-level reorder rate ranking.
+3. **Department Reorder Rate**: category-level retention analysis.
+4. **Customer Frequency Segments**: light/medium/heavy buyer segmentation using window functions.
+5. **RFM Feature Engineering**: recency, frequency, monetary proxy per customer using chained CTEs.
 
 ## Dataset
-Instacart Online Grocery Shopping Dataset 2017
-(https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis)
+Instacart Online Grocery Shopping Dataset 2017  
+[Download from Kaggle](https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis)
 
-Download the dataset from Kaggle and place the CSV files inside a `/data` folder:
+Place the CSV files inside a `/data` folder:
 - `aisles.csv`
 - `departments.csv`
 - `orders.csv`
@@ -26,32 +66,31 @@ Download the dataset from Kaggle and place the CSV files inside a `/data` folder
 - `order_products__prior.csv`
 
 ## Setup
+
+### Python (Notebook)
 1. Clone the repository
-````bash
-    git clone https://github.com/nivalix/instacart-customer-behaviour-analysis.git
-    cd instacart-customer-behaviour-analysis
-````
-
+```bash
+git clone https://github.com/nivalix/instacart-customer-behaviour-analysis.git
+cd instacart-customer-behaviour-analysis
+```
 2. Create and activate virtual environment
-````bash
-    python -m venv .venv
-
-    # Windows
-    .venv\Scripts\activate
-
-    # Mac/Linux
-    source .venv/bin/activate
-````
-   
+```bash
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# Mac/Linux
+source .venv/bin/activate
+```
 3. Install dependencies
-````bash
-    pip install -r requirements.txt
-````
+```bash
+pip install -r requirements.txt
+```
 4. Open the notebook
-````bash
-    jupyter notebook customer_behaviour_analysis.ipynb
-````
+```bash
+jupyter notebook customer_behaviour_analysis.ipynb
+```
 
-## Key Findings
-1. Identified the peak shopping hours (10AM - 4PM) and days, along with dominating items such as organic products and dairy.
-2. Identified three distinct customer segments using K-Means Clustering (The Loyalist, The Newcomer, The Potential Churn) along with their respective marketing strategy recommendations.
+### SQL
+1. Install PostgreSQL 16 and create a database named `instacart`
+2. Run `sql/01_setup.sql` to create tables and load data.
+3. Run `sql/02_analysis.sql` to execute the business intelligence queries.
