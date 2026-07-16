@@ -1,0 +1,4 @@
+cluster,recency,purchase_count,total_items_purchased,reorder_ratio,customer_count,segment
+0,28.07,6.96,62.36,0.32,71128,Potential Churn
+1,10.59,31.34,332.82,0.63,72570,The Loyalist
+2,8.81,7.13,61.53,0.32,62511,The Newcomer

@@ -17,4 +17,5 @@ pyvenv.cfg
 kmeans_tuning_results.json
 
 # Exclusion
-!notebook_outputs/cluster_results.csv
+!notebook_outputs/cluster_profile.csv
+!kmeans_tuning_results.json
