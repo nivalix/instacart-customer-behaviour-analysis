@@ -1,0 +1,64 @@
+"segment","department","total_orders","segment_orders_percentage"
+Potential Churn,produce,1334778,27.38
+Potential Churn,dairy eggs,759128,15.57
+Potential Churn,snacks,416641,8.55
+Potential Churn,beverages,409919,8.41
+Potential Churn,frozen,377170,7.74
+Potential Churn,pantry,314722,6.46
+Potential Churn,canned goods,183530,3.77
+Potential Churn,bakery,175026,3.59
+Potential Churn,deli,159208,3.27
+Potential Churn,dry goods pasta,145874,2.99
+Potential Churn,household,140854,2.89
+Potential Churn,meat seafood,113662,2.33
+Potential Churn,breakfast,106069,2.18
+Potential Churn,personal care,81833,1.68
+Potential Churn,international,45253,0.93
+Potential Churn,babies,43953,0.90
+Potential Churn,alcohol,31238,0.64
+Potential Churn,pets,16976,0.35
+Potential Churn,missing,8618,0.18
+Potential Churn,other,6117,0.13
+Potential Churn,bulk,3854,0.08
+The Loyalist,produce,7379193,29.86
+The Loyalist,dairy eggs,4222105,17.08
+The Loyalist,snacks,2233713,9.04
+The Loyalist,beverages,2035392,8.24
+The Loyalist,frozen,1639228,6.63
+The Loyalist,pantry,1364874,5.52
+The Loyalist,bakery,900418,3.64
+The Loyalist,deli,802715,3.25
+The Loyalist,canned goods,775278,3.14
+The Loyalist,dry goods pasta,637196,2.58
+The Loyalist,breakfast,541532,2.19
+The Loyalist,meat seafood,525251,2.13
+The Loyalist,household,517803,2.10
+The Loyalist,babies,353556,1.43
+The Loyalist,personal care,314387,1.27
+The Loyalist,international,195601,0.79
+The Loyalist,alcohol,98143,0.40
+The Loyalist,pets,70451,0.29
+The Loyalist,missing,51478,0.21
+The Loyalist,bulk,28450,0.12
+The Loyalist,other,25900,0.10
+The Newcomer,produce,1174407,27.75
+The Newcomer,dairy eggs,649834,15.36
+The Newcomer,beverages,358864,8.48
+The Newcomer,snacks,356058,8.41
+The Newcomer,frozen,320460,7.57
+The Newcomer,pantry,277223,6.55
+The Newcomer,canned goods,156049,3.69
+The Newcomer,bakery,149737,3.54
+The Newcomer,deli,133617,3.16
+The Newcomer,dry goods pasta,122270,2.89
+The Newcomer,household,115995,2.74
+The Newcomer,meat seafood,100325,2.37
+The Newcomer,breakfast,91468,2.16
+The Newcomer,personal care,72473,1.71
+The Newcomer,babies,41234,0.97
+The Newcomer,international,40301,0.95
+The Newcomer,alcohol,29913,0.71
+The Newcomer,missing,17300,0.41
+The Newcomer,pets,14794,0.35
+The Newcomer,other,6069,0.14
+The Newcomer,bulk,3628,0.09
