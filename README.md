@@ -18,6 +18,7 @@ An end-to-end customer segmentation pipeline built based on 32M+ Instacart groce
 1. **Peak activity:** Shopping activity peaks between 10AM - 4PM, with organic produce and dairy dominating reorder volume (Dairy Eggs with 67% and Beverages with 65.3% lead reorder rate by department).
 
 2. **Three distinct customer segments** were identified via K-Means (tuned k=3, validated with elbow + silhouette methods):
+
 | **Segment** | **Customers** | **Avg Days Between Orders** | **Avg Reorder Ratio** | **% of Total** |
 |---|---|---|---|---|
 | Potential Churn | 71,128 | 28.07 | 32.24% | 34.61% |
